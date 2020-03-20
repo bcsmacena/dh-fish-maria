@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+header *{ 
+    display: inline-block;   
+}
+
+header h1, nav{
+        width: 49%;  
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    width: 100px;
+    text-align: center;
+}
+
+#banner {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.exp1 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp1 .img {
+    background-image: url(../img/exp-1.jpg);;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    
+}
+
+.exp2 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp2 .img {
+    background-image: url(../img/exp-2.jpg);;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+section {
+    padding: 20px;
+}
+
+#contato {
+    text-align: center;
+    background-color: rgb(5, 59, 5);
+    color: white;
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+form *{
+    display: block;
+}
+
+input, textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+}
+
+@media (max-width: 375px){
+    header{
+        /* background-color: red; */
+    }
+    nav{
+        display: none;
+    }
+    .exp1 div, article{
+        display: inline-block;
+        width: 100%;
+    }
+    .exp2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .exp2 div, article{
+        display: inline-block;
+        width: 100%;
+    }
+    #banner {
+        background-image: url("../img/banner.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+    }
+}
